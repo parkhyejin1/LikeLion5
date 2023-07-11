@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>each</title>
+</head>
+<body>
+<h1>Item List</h1>
+
+<div>
+    <p>여기에 List의 각 데이터가 담긴채</p>
+</div>
+<div>
+    <p th:each="item:${listOfStrings}">item : [[${item}]]</p>
+</div>
+<div th:each="student:${studentList}">
+    <h3>Name : [[${student.name}]]</h3>
+    <p>Email : [[${student.email}]]</p>
+</div>
+
+</body>
+</html>

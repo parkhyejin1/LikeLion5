@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if-unless</title>
+</head>
+<body>
+<h1>Welcome</h1>
+<div th:if="${isLoggedIn}">
+<p>You are Logged in.</p>
+</div>
+<div th:unless ="${isLoggedIn}">
+     <p>Please log in.</p>
+</div>
+</body>
+</html>
