@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header></header>
+<div id="container">
+    <div class="container-item">
+        <h3>Alex</h3>
+        <p>alex@gmail.com</p>
+    </div>
+    <div class="container-item">
+        <h3>Brad</h3>
+        <p>brad@gmail.com</p>
+    </div>
+</div>
+<script>
+  const windowAlerts = function() {
+    window.alert()
+    window.alert('로그인이 필요합니다.')
+    window.alert('비밀번호가 맞지 않습니다.')
+    window.alert('응모가 완료 되었습니다.')
+  }
+
+  const windowConfirm = function () {
+    const doMove = window.confirm('아이템이 추가되었습니다. 장바구니로 이동하시겠습니까?')
+    if (doMove) window.open('https://google.com')
+  }
+
+  const windowPrompt = function() {
+    const todoDesc = window.prompt('새로운 할일')
+    const todoExpire = window.prompt('언제까지')
+    window.alert(`새로운 할일: ${todoDesc}, ${todoExpire} 까지`)
+  }
+
+
+  const headerElem = document.querySelector('header')
+  headerElem.innerText = 'JS Generated Header'
+  const newHeading = document.createElement('h1')
+  newHeading.innerText = 'JS Genrated Heading'
+  headerElem.appendChild(newHeading)
+
+
+</script>
+</body>
+</html>
